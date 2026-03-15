@@ -10,19 +10,9 @@ move: { speed: 2 }
 });
 
 function startBot(){
-document.getElementById("botStatus").innerText="Status : ON";
+document.getElementById("botStatus").innerText="Status: ON";
 }
 
 function stopBot(){
-document.getElementById("botStatus").innerText="Status : OFF";
-}
-
-function login(){
-var user=document.getElementById("user").value;
-var pass=document.getElementById("pass").value;
-if(user=="admin" && pass=="1234"){
-window.location="admin.html";
-}else{
-alert("Wrong Login");
-}
+document.getElementById("botStatus").innerText="Status: OFF";
 }
