@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NAIM BOT PANEL</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<h1 class="title">👑 NAIM CONTROL CENTER</h1>
+
+<div class="grid">
+
+<a href="profile.html"><div class="card">👤 Profile</div></a>
+<a href="api.html"><div class="card">📡 API List</div></a>
+<a href="admin.html"><div class="card">📊 Admin Dashboard</div></a>
+
+<div class="card">
+🎵 Music Player<br><br>
+<audio controls>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="card">
+🤖 Bot Control<br><br>
+<button onclick="startBot()">Start Bot</button>
+<button onclick="stopBot()">Stop Bot</button>
+<p id="botStatus">Status : OFF</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
