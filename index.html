@@ -2,34 +2,70 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>NAIM BOT PANEL</title>
+<title>NAIM GOLD DASHBOARD</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
 
+<!-- Particles background -->
 <div id="particles-js"></div>
 
 <h1 class="title">👑 NAIM CONTROL CENTER</h1>
 
 <div class="grid">
 
-<a href="profile.html"><div class="card">👤 Profile</div></a>
-<a href="api.html"><div class="card">📡 API List</div></a>
-<a href="admin.html"><div class="card">📊 Admin Dashboard</div></a>
-
+<!-- Profile Card -->
 <div class="card">
-🎵 Music Player<br><br>
+<h2>👤 Profile</h2>
+<p>Name: Naim</p>
+<p>Role: Bot Developer</p>
+<p>Country: Bangladesh</p>
+</div>
+
+<!-- API List Card -->
+<div class="card">
+<h2>📡 API Endpoints</h2>
+<ul>
+<li>/api/song?q=</li>
+<li>/api/video?q=</li>
+<li>/api/ai?text=</li>
+<li>/api/facebookdl?url=</li>
+</ul>
+</div>
+
+<!-- Admin Dashboard Stats -->
+<div class="card">
+<h2>📊 Admin Dashboard</h2>
+<p>Users: 120</p>
+<p>Commands Used: 560</p>
+<p>Bot Status: <span class="status-online">Online</span></p>
+<p>Server: Running</p>
+</div>
+
+<!-- Bot Logs Card -->
+<div class="card log-card">
+<h2>🤖 Bot Logs</h2>
+<textarea rows="6" readonly>
+Bot started...
+Waiting commands...
+</textarea>
+</div>
+
+<!-- Music Player Card -->
+<div class="card">
+<h2>🎵 Music Player</h2>
 <audio controls>
 <source src="music.mp3" type="audio/mpeg">
 </audio>
 </div>
 
+<!-- Bot Control Card -->
 <div class="card">
-🤖 Bot Control<br><br>
+<h2>Bot Control</h2>
 <button onclick="startBot()">Start Bot</button>
 <button onclick="stopBot()">Stop Bot</button>
-<p id="botStatus">Status : OFF</p>
+<p id="botStatus">Status: OFF</p>
 </div>
 
 </div>
