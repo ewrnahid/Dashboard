@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>📊 Admin Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>📊 Admin Dashboard</h1>
+
+<h1 class="title">📊 Admin Dashboard</h1>
 
 <div class="grid">
 
-<div class="card">
-Users : 120
+<div class="card admin-card">
+<h3>Users</h3>
+<p>120</p>
 </div>
 
-<div class="card">
-Commands Used : 560
+<div class="card admin-card">
+<h3>Commands Used</h3>
+<p>560</p>
 </div>
 
-<div class="card">
-Bot Status : Online
+<div class="card admin-card">
+<h3>Bot Status</h3>
+<p style="color:lightgreen;font-weight:bold;">Online</p>
 </div>
 
-<div class="card">
-Server : Running
+<div class="card admin-card">
+<h3>Server</h3>
+<p>Running</p>
 </div>
 
-<div class="card">
+<div class="card admin-card log-card">
 <h3>Bot Logs</h3>
-<textarea rows="10" cols="40">
+<textarea rows="8" readonly>
 Bot started...
 Waiting commands...
 </textarea>
@@ -34,7 +41,7 @@ Waiting commands...
 
 </div>
 
-<a href="index.html">⬅ Back</a>
-<script src="script.js"></script>
+<a href="index.html"><button class="backBtn">⬅ Back</button></a>
+
 </body>
 </html>
