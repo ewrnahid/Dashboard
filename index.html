@@ -2,71 +2,75 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>NAIM GOLD DASHBOARD</title>
+<title>👑 NAIM CONTROL CENTER</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
 
-<!-- Particles background -->
+<!-- Particles Background -->
 <div id="particles-js"></div>
 
+<!-- Page Title -->
 <h1 class="title">👑 NAIM CONTROL CENTER</h1>
 
+<!-- Dashboard Grid -->
 <div class="grid">
 
-<!-- Profile Card -->
-<div class="card">
-<h2>👤 Profile</h2>
-<p>Name: Naim</p>
-<p>Role: Bot Developer</p>
-<p>Country: Bangladesh</p>
-</div>
+  <!-- Profile Card -->
+  <div class="card">
+    <h2>👤 Profile</h2>
+    <p><strong>Name:</strong> Naim</p>
+    <p><strong>Role:</strong> Bot Developer</p>
+    <p><strong>Country:</strong> Bangladesh</p>
+  </div>
 
-<!-- API List Card -->
-<div class="card">
-<h2>📡 API Endpoints</h2>
-<ul>
-<li>/api/song?q=</li>
-<li>/api/video?q=</li>
-<li>/api/ai?text=</li>
-<li>/api/facebookdl?url=</li>
-</ul>
-</div>
+  <!-- API Endpoints -->
+  <div class="card">
+    <h2>📡 API Endpoints</h2>
+    <ul class="api-list">
+      <li>/api/song?q=</li>
+      <li>/api/video?q=</li>
+      <li>/api/ai?text=</li>
+      <li>/api/facebookdl?url=</li>
+    </ul>
+  </div>
 
-<!-- Admin Dashboard Stats -->
-<div class="card">
-<h2>📊 Admin Dashboard</h2>
-<p>Users: 120</p>
-<p>Commands Used: 560</p>
-<p>Bot Status: <span class="status-online">Online</span></p>
-<p>Server: Running</p>
-</div>
+  <!-- Admin Dashboard Stats -->
+  <div class="card">
+    <h2>📊 Admin Dashboard</h2>
+    <p><strong>Users:</strong> 120</p>
+    <p><strong>Commands Used:</strong> 560</p>
+    <p><strong>Bot Status:</strong> <span class="status-online">Online</span></p>
+    <p><strong>Server:</strong> Running</p>
+  </div>
 
-<!-- Bot Logs Card -->
-<div class="card log-card">
-<h2>🤖 Bot Logs</h2>
-<textarea rows="6" readonly>
+  <!-- Bot Logs -->
+  <div class="card log-card">
+    <h2>🤖 Bot Logs</h2>
+    <textarea rows="6" readonly>
 Bot started...
 Waiting commands...
-</textarea>
-</div>
+    </textarea>
+  </div>
 
-<!-- Music Player Card -->
-<div class="card">
-<h2>🎵 Music Player</h2>
-<audio controls>
-<source src="music.mp3" type="audio/mpeg">
-</audio>
-</div>
+  <!-- Music Player -->
+  <div class="card">
+    <h2>🎵 Music Player</h2>
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
-<!-- Bot Control Card -->
-<div class="card">
-<h2>Bot Control</h2>
-<button onclick="startBot()">Start Bot</button>
-<button onclick="stopBot()">Stop Bot</button>
-<p id="botStatus">Status: OFF</p>
-</div>
+  <!-- Bot Control -->
+  <div class="card">
+    <h2>Bot Control</h2>
+    <div class="bot-buttons">
+      <button onclick="startBot()">Start Bot</button>
+      <button onclick="stopBot()">Stop Bot</button>
+    </div>
+    <p id="botStatus">Status: OFF</p>
+  </div>
 
 </div>
 
